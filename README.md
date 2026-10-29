@@ -99,7 +99,7 @@ The `headers` block is optional. Leave it out to use the free tier.
 - "Show GE's FY2017 revenue as of 2018-02-28 and as of today. Why are they different?"
 - "List the S&P 500 members on 2008-09-01. Which of them were removed by the end of 2009?"
 - "Which SEC filings did Enron have on record as of 2001-10-15, and were any of them later amended?"
-- "When exactly did Tesla's Q4 2023 earnings 8-K hit EDGAR, and how did the stock react?"
+- "When exactly did Apple's fiscal Q1 2019 earnings 8-K hit EDGAR, and how did the stock react the next day?"
 - "Build me a list of S&P 500 constituents on 2012-06-30 with their net income for the latest fiscal year known on that date."
 
 ## Plans
