@@ -1,0 +1,30 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.ptdata/ptdata",
+  "title": "PtData",
+  "description": "Point-in-time US equity fundamentals for quants and AI agents. Free tier, no API key needed.",
+  "version": "3.3.2",
+  "websiteUrl": "https://ptdata.io",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.ptdata.io/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Optional. Bearer <your PtData API key> for Pro/Scale limits. Leave empty for the free tier.",
+          "isRequired": false,
+          "isSecret": true,
+          "value": "Bearer {api_key}",
+          "variables": {
+            "api_key": {
+              "description": "Your PtData API key (ptd_live_...), from https://api.ptdata.io/account",
+              "isRequired": false,
+              "isSecret": true
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

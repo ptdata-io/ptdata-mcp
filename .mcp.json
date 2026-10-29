@@ -1,0 +1,7 @@
+{
+  "mcpServers": {
+    "ptdata": {
+      "url": "https://api.ptdata.io/mcp"
+    }
+  }
+}
