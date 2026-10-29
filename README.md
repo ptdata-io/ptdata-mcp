@@ -134,4 +134,4 @@ All data comes from SEC EDGAR.
 
 ## License
 
-The configuration files and documentation in this repository are MIT licensed. The PtData service itself is governed by its terms of service at https://ptdata.io.
+The configuration files and documentation in this repository are MIT licensed. The PtData service itself is governed by its terms of service at https://ptdata.io/terms.
