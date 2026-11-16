@@ -37,7 +37,7 @@ All four tools are read-only and idempotent.
 | `get_fundamentals` | Fundamentals for a ticker as known on `as_of_date`, each with source filing, knowledge time and lineage. Missing metrics come back under `unavailable` with a reason instead of being silently dropped. |
 | `get_index_constituents` | S&P 500 (or another supported index) members on `as_of_date`, survivorship-free, with the ticker used at the time. |
 | `get_filing_metadata` | SEC filings for a ticker available on `as_of_date`, newest first, with amendment linkage. |
-| `get_earnings_event` | An earnings event by `ticker`, `fiscal_year` and `fiscal_period` (FY or Q1–Q4): 8-K acceptance timestamp, as-reported figures and the realized price reaction. |
+| `get_earnings_event` | An earnings event by `ticker`, `fiscal_year` and `fiscal_period` (FY, or Q1–Q3). Both arguments are required and there is no `as_of_date`. Returns the 8-K acceptance timestamp and as-reported revenue and `eps_gaap`. A fourth-quarter release is stored as FY. |
 
 ## Install
 
@@ -99,7 +99,7 @@ The `headers` block is optional. Leave it out to use the free tier.
 - "Show GE's FY2017 revenue as of 2018-02-28 and as of today. Why are they different?"
 - "List the S&P 500 members on 2008-09-01. Which of them were removed by the end of 2009?"
 - "Which SEC filings did Enron have on record as of 2001-10-15, and were any of them later amended?"
-- "When exactly did Apple's fiscal Q1 2019 earnings 8-K hit EDGAR, and how did the stock react the next day?"
+- "When exactly did Apple's fiscal Q1 2019 earnings 8-K hit EDGAR?"
 - "Build me a list of S&P 500 constituents on 2012-06-30 with their net income for the latest fiscal year known on that date."
 
 ## Plans
