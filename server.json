@@ -3,8 +3,20 @@
   "name": "io.ptdata/ptdata",
   "title": "PtData",
   "description": "Point-in-time US equity fundamentals for quants and AI agents. Free tier, no API key needed.",
-  "version": "3.3.2",
+  "version": "3.3.3",
   "websiteUrl": "https://ptdata.io",
+  "repository": {
+    "url": "https://github.com/ptdata-io/ptdata-mcp",
+    "source": "github",
+    "id": "1438658093"
+  },
+  "icons": [
+    {
+      "src": "https://api.ptdata.io/icon-512.png",
+      "mimeType": "image/png",
+      "sizes": ["512x512"]
+    }
+  ],
   "remotes": [
     {
       "type": "streamable-http",
