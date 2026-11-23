@@ -23,7 +23,8 @@ PtData stores every version. You pass an `as_of_date` and get what was public on
 | As of | Revenue | Source filing (accession) |
 |---|---|---|
 | 2018-02-28 | **$122.09B** | Original FY2017 10-K, `0000040545-18-000014` |
-| today | **$110.97B** | Restated in the FY2018 10-K, `0000040545-19-000014` |
+| 2019-03-01 | **$118.24B** | FY2018 10-K, `0000040545-19-000014` |
+| 2026-11-01 | **$99.28B** | Later 10-K, `0000040545-20-000009` |
 
 ```bash
 curl "https://api.ptdata.io/v1/fundamentals?ticker=GE&as_of_date=2018-02-28&metrics=revenue&fiscal_year=2017&fiscal_period=FY"
@@ -35,7 +36,7 @@ All four tools are read-only and idempotent.
 
 | Tool | What it returns |
 |---|---|
-| `get_fundamentals` | Fundamentals for a ticker as known on `as_of_date`, each with source filing, knowledge time and lineage. Missing metrics come back under `unavailable` with a reason instead of being silently dropped. |
+| `get_fundamentals` | Fundamentals for a ticker as known on `as_of_date`, each with source filing, knowledge time and lineage. Missing metrics come back under `unavailable` with a reason instead of being silently dropped. A missing Q4 income or cash-flow figure may be derived. EPS and share counts are not. |
 | `get_index_constituents` | S&P 500 (or another supported index) members on `as_of_date`, survivorship-free, with the ticker used at the time. |
 | `get_filing_metadata` | SEC filings for a ticker available on `as_of_date`, newest first, with amendment linkage. |
 | `get_earnings_event` | An earnings event by `ticker`, `fiscal_year` and `fiscal_period` (FY, or Q1–Q3). Both arguments are required and there is no `as_of_date`. Returns the 8-K acceptance timestamp and as-reported revenue and `eps_gaap`. A fourth-quarter release is stored as FY. |
