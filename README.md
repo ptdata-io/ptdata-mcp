@@ -10,6 +10,7 @@ Streamable HTTP. No install, no key needed for the free tier.
 
 [![Add to Cursor](https://cursor.com/deeplink/mcp-install-dark.svg)](https://cursor.com/install-mcp?name=ptdata&config=eyJ1cmwiOiJodHRwczovL2FwaS5wdGRhdGEuaW8vbWNwIn0=)
 [![Install in VS Code](https://img.shields.io/badge/VS_Code-Install_PtData-0098FF?logo=visualstudiocode&logoColor=white)](https://vscode.dev/redirect/mcp/install?name=ptdata&config=%7B%22type%22%3A%22http%22%2C%22url%22%3A%22https%3A%2F%2Fapi.ptdata.io%2Fmcp%22%7D)
+[![mcptry](https://mcptry.com/badge/io.ptdata/ptdata)](https://mcptry.com/servers/io.ptdata/ptdata)
 
 ## Why point-in-time
 
