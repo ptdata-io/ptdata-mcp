@@ -95,6 +95,10 @@ Click **Install in VS Code** above, or run **MCP: Add Server** from the Command 
 
 The `headers` block is optional. Leave it out to use the free tier.
 
+## Python
+
+Prefer plain Python to MCP? `pip install ptdata` gives you the same point-in-time data as pandas-friendly objects. See [ptdata-python](https://github.com/ptdata-io/ptdata-python).
+
 ## Example prompts
 
 - "What was Apple's revenue for fiscal 2015 as it was known on 2016-01-31, and which filing did it come from?"
